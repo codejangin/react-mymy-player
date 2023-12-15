@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.top {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 120px;
+}
+
+header h3 {
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  background: #4aa9de;
+  color: white;
+}
+
+.playlist {
+  background: #e3e3e3;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  background: #e9ef98;
+}
+
+.mp3-container {
+  cursor: pointer;
+}
+
+.playlist li {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  padding: 0;
+  width: 80vw;
+}
+
+.playlist li:hover {
+  background-color: #bce1dc;
+}
+
+.mp3meta-playlist {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+.mp3-title {
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.mp3-artist {
+  padding: 0 10px;
+  font-weight: normal;
+  color: #555;
+  font-size: 0.875rem;
+}
+
+.seek-wrap {
+  min-width: 100%;
+  background-color: gray;
+  height: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.seek-wrap .seek-bar {
+  width: 0;
+  background-color: red;
+  height: 100%;
+  border-radius: 30px;
+}
